@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderMsgCell" rowHeight="70" id="KGk-i7-Jjw" customClass="SenderMsgCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-TY-bHr">
+                        <rect key="frame" x="190" y="8" width="122" height="53"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CHATBOX_2" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-Zy-THh">
+                                <rect key="frame" x="0.0" y="0.0" width="122" height="53"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hem-hK-gGt">
+                                <rect key="frame" x="16" y="0.0" width="98" height="33"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="8jK-vc-h4N"/>
+                                    <constraint firstAttribute="height" constant="33" id="XbY-Ix-Tx8"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21/03/2014 18:20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zj-Jd-RbU">
+                                <rect key="frame" x="8" y="33" width="100" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ekv-xI-riA"/>
+                                    <constraint firstAttribute="height" constant="15" id="eBE-p5-mgS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Zj-Jd-RbU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cnB-TY-bHr" secondAttribute="leading" constant="8" id="0D7-Mx-FMA"/>
+                            <constraint firstAttribute="trailing" secondItem="5Zj-Jd-RbU" secondAttribute="trailing" constant="14" id="0R1-SK-aIO"/>
+                            <constraint firstAttribute="trailing" secondItem="iAR-Zy-THh" secondAttribute="trailing" id="9hu-j4-fd2"/>
+                            <constraint firstItem="hem-hK-gGt" firstAttribute="leading" secondItem="cnB-TY-bHr" secondAttribute="leading" constant="16" id="DBk-Si-0dd"/>
+                            <constraint firstItem="iAR-Zy-THh" firstAttribute="leading" secondItem="cnB-TY-bHr" secondAttribute="leading" id="DlH-lm-zaz"/>
+                            <constraint firstItem="iAR-Zy-THh" firstAttribute="top" secondItem="cnB-TY-bHr" secondAttribute="top" id="HhG-Z2-77D"/>
+                            <constraint firstItem="5Zj-Jd-RbU" firstAttribute="top" secondItem="hem-hK-gGt" secondAttribute="bottom" id="c3h-73-A1Q"/>
+                            <constraint firstAttribute="bottom" secondItem="5Zj-Jd-RbU" secondAttribute="bottom" constant="5" id="d1I-SJ-qAe"/>
+                            <constraint firstAttribute="trailing" secondItem="hem-hK-gGt" secondAttribute="trailing" constant="8" id="p9e-P5-ye0"/>
+                            <constraint firstAttribute="bottom" secondItem="iAR-Zy-THh" secondAttribute="bottom" id="tO8-gi-yvY"/>
+                            <constraint firstItem="hem-hK-gGt" firstAttribute="top" secondItem="cnB-TY-bHr" secondAttribute="top" id="wdH-5c-tjf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cnB-TY-bHr" secondAttribute="bottom" constant="8" id="3dw-yJ-xdY"/>
+                    <constraint firstItem="cnB-TY-bHr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="94F-nP-kx1"/>
+                    <constraint firstItem="cnB-TY-bHr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="iZY-ah-oBP"/>
+                    <constraint firstAttribute="trailing" secondItem="cnB-TY-bHr" secondAttribute="trailing" constant="8" id="s1H-Cs-9zc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="chatMsgTxt" destination="hem-hK-gGt" id="fI5-a3-mB0"/>
+                <outlet property="chatMsgTxtHeightConstraint" destination="XbY-Ix-Tx8" id="nwX-zF-hPu"/>
+                <outlet property="chatMsgTxtWidthConstraint" destination="8jK-vc-h4N" id="gkm-Vk-f2h"/>
+                <outlet property="dateTimeLbl" destination="5Zj-Jd-RbU" id="9p8-nq-drX"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="234"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CHATBOX_2" width="106" height="27"/>
+    </resources>
+</document>
